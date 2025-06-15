@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Exchange Rates</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🔧 Edit Exchange Rates</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th>Currency</th>
+          <th>Buy</th>
+          <th>Sell</th>
+        </tr>
+      </thead>
+      <tbody id="adminTable"></tbody>
+    </table>
+  </div>
+  <script>
+    let exchangeData = {};
+
+    async function loadData() {
+      const res = await fetch('data.json?_=' + new Date().getTime());
+      exchangeData = await res.json();
+      const adminTable = document.getElementById("adminTable");
+      adminTable.innerHTML = '';
+      Object.keys(exchangeData).forEach(key => {
+        const rate = exchangeData[key];
+        const row = `<tr>
+          <td>${rate.country}</td>
+          <td>${rate.currency}</td>
+          <td><input type="text" id="buy-${key}" value="${rate.buy}" oninput="autoSave('${key}')"></td>
+          <td><input type="text" id="sell-${key}" value="${rate.sell}" oninput="autoSave('${key}')"></td>
+        </tr>`;
+        adminTable.innerHTML += row;
+      });
+    }
+
+    function autoSave(key) {
+      exchangeData[key].buy = document.getElementById(`buy-${key}`).value;
+      exchangeData[key].sell = document.getElementById(`sell-${key}`).value;
+      fetch('save.php', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(exchangeData)
+      });
+    }
+
+    loadData();
+  </script>
+</body>
+</html>

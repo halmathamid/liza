@@ -1,0 +1,103 @@
+
+
+
+{
+  "USD_IQD": {
+    "country": "<img src='https://flagcdn.com/us.svg' width='50'>",
+    "currency": "دۆلار",
+    "buy": "142,500",
+    "sell": "142,600"
+  },
+  "EUR_IQD": {
+    "country": "<img src='https://flagcdn.com/eu.svg' width='50'>",
+    "currency": "یۆرۆ",
+    "buy": "110.8",
+    "sell": "111.5"
+  },
+  "GBP_IQD": {
+    "country": "<img src='https://flagcdn.com/gb.svg' width='50'>",
+    "currency": "پاوند",
+    "buy": "130.85",
+    "sell": "131.7"
+  },
+  "TRY_IQD": {
+    "country": "<img src='https://flagcdn.com/tr.svg' width='50'>",
+    "currency": "تورکی",
+    "buy": "3,970",
+    "sell": "3,800"
+  },
+    "IRR_USD": {
+    "country": "<img src='https://flagcdn.com/ir.svg' width='50'>",
+    "currency": "تومن",
+    "buy": "8,500,000",
+    "sell": "7,500,000"
+  },
+  "SAR_IQD": {
+    "country": "<img src='https://flagcdn.com/sa.svg' width='50'>",
+    "currency": "سعودی",
+    "buy": "382",
+    "sell": "372"
+  },
+  "AED_USD": {
+    "country": "<img src='https://flagcdn.com/ae.svg' width='50'>",
+    "currency": "ئیماراتی",
+    "buy": "373",
+    "sell": "366"
+  },
+  "CAD_USD": {
+    "country": "<img src='https://flagcdn.com/ca.svg' width='50'>",
+    "currency": "کەنەدی",
+    "buy": "69.1",
+    "sell": "63"
+  },
+
+  "JOD_USD": {
+    "country": "<img src='https://flagcdn.com/jo.svg' width='50'>",
+    "currency": "ئوردنی",
+    "buy": "71",
+    "sell": "68"
+  },
+    "QAR_USD": {
+    "country": "<img src='https://flagcdn.com/qa.svg' width='50'>",
+    "currency": "قەتەری",
+    "buy": "25.97",
+    "sell": "27.5"
+  },
+  "KWD_USD": {
+    "country": "<img src='https://flagcdn.com/kw.svg' width='50'> ",
+    "currency": "کوێتی",
+    "buy": "35.71",
+    "sell": "31.74"
+  },
+  "NOK_USD": {
+    "country": "<img src='https://flagcdn.com/no.svg' width='50'>",
+    "currency": "نرویجی",
+    "buy": "77",
+    "sell": "81"
+  },
+  "SEK_USD": {
+    "country": "<img src='https://flagcdn.com/se.svg' width='50'>",
+    "currency": "سویدی",
+    "buy": "84",
+    "sell": "87"
+  },
+  "AUD_USD": {
+    "country": "<img src='https://flagcdn.com/au.svg' width='50'> ",
+    "currency": "ئوسترالی",
+    "buy": "61.5",
+    "sell": "63"
+  },
+
+  "DKK_USD": {
+    "country": "<img src='https://flagcdn.com/dk.svg' width='50'>",
+    "currency": "دانیمارکی",
+    "buy": "125",
+    "sell": "131"
+  },
+    "CHF_USD": {
+    "country": "<img src='https://flagcdn.com/ch.svg' width='50'>",
+    "currency": "سویسری",
+    "buy": "117.1",
+    "sell": "118.7"
+  }
+}
